@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin's Fitness Club</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   <style>
+        /* CSS Reset */
+        body{
+            font-family: 'Baloo Bhai' , cursive;
+            margin:0px;
+            padding:0px;
+            background: url('bg.png')no-repeat center center/cover;
+
+        }
+        .left{
+            display: inline-block;
+            /* border:3px solid gray; */
+            position: absolute;
+            left:35px;
+            top:20px;
+        }
+        .left img{
+            width:130px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+            display: block;
+            width:40%;
+            margin:20px auto;
+            /* border:3px solid black; */
+        }
+        .right{
+            position:absolute;
+            right:35px;
+            top:20px;
+            display: inline-block;
+            /* border:3px solid yellowgreen; */
+        }
+        .navbar{
+            display:inline-block
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navbar li a{
+            color:black;
+            text-decoration:none;
+            padding:35px 20px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            text-decoration: underline;
+            color:gray;
+        }
+        .btn{
+            font-family: 'Baloo Bhai' , cursive;
+            margin:0px 2px;
+            padding:7px 7px;
+            border-radius: 3px;
+            color:gray;
+        }
+        .btn:hover{
+            text-decoration: underline;
+            color:rgb(24, 20, 20);
+        }
+        .container{
+            border:4px solid black;
+            margin:95px 80px;
+            padding:35px;
+            width:33%;
+            border-radius: 20px;
+        }
+        .form-group input{
+            text-align: center;
+            display:block;
+            width:300px;
+            padding:3px;
+            border-radius: 5px;
+            border:3px solid black;
+            margin:3px auto;
+            font-size: 17px;
+            font-family: 'Baloo Bhai' , cursive;
+        }
+        h1{
+            text-align: center;
+            color:rgb(56, 48, 48)
+        }
+        .container button{
+            margin: 7px 205px;
+            height: 40px;
+            width:75px;
+            color:gray;
+            border: 3px solid black;
+            font-size: 17px;
+            border-radius: 5px;
+            text-align: center;
+            font-family: 'Baloo Bhai' , cursive;
+        }
+        
+
+   </style> 
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="icon.png" alt="">
+            <div>Devin's Fitness Club</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Contact Us</button>
+            <button class="btn">Email Us</button>
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Rajkot</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
